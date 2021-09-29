@@ -41,7 +41,12 @@
 
 
     // Add your code here
-
+    for (i; i > 1; i--) {
+      if (isPrime(i)) {
+        para.textContent += `${i}`;
+        if (i > 2) { para.textContent += " | "; }
+      }
+    }
 
     // Don't edit the code below here!
     let section = document.querySelector('section');
